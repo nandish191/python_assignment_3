@@ -1,0 +1,110 @@
+# Maximum sum of elements of list in a list of lists
+l2=[]
+li=[
+    [1,2,3,4],[5,6,7,8],[10,11,12,13]
+]
+for ele in li:
+    a=sum(ele)
+    l2.append(a)
+
+print(l2)
+print(max(l2))
+
+# Python program to interchange first and last elements in a list
+l=[1,2,3,4,5,6]
+a=l[0]
+l[0]=l[-1]
+l[-1]=a
+print(l)
+
+
+# Python Program to Swap Two Elements in a List
+a=[22,33]
+print('list before swapping :', a)
+temp=a[0]
+a[0]=a[1]
+a[1]=temp
+print("list after swapping" ,a)
+
+
+# program to find the String in a List
+
+l = [1, 2.0, 'have', 'a', 'geeky', 'day']
+for ele in l:
+    if isinstance(ele, str):
+        print(ele)
+
+Get a list as input from user
+a=eval(input("enter element a :")
+b=eval(input("enter element b:"))
+c=eval(input("enter eleemnt c"))
+l2=[]
+l=a,b,c
+l2.append(l)
+print(l2, type(l2))
+
+
+# Create list of numbers with given range and print even and odd no 
+a=int(input("enter no :"))
+b=int(input("enter no :"))
+for ele in range(a,b):
+    if ele%2==0:
+        print("even no :", ele, end=" ")
+    elif ele%2!=0:
+        print("odd no :", ele, end=" ")    
+    else:
+        print(ele)    
+
+
+# Reverse Words in a Given String
+
+st=str(input("enter a string :"))
+rev=st[::-1]
+print(st)
+print(rev)
+# print(st, type(st))
+
+#program to remove numbers from string
+
+l2=[]
+st= "hello123"
+l=list(st)
+for ele in l:
+    if ele.isdigit():
+        l.remove(ele)
+print(l)
+
+
+# sorting dict keys
+d={
+    1:"java",
+    5:"python",
+    3:"java script",
+    6:"node js",
+    8:"css"
+}
+
+keys=list(d.keys())
+print(keys.sort())
+print(d.keys(), d.values())
+
+d = {2: 56, 1: 2, 5: 12, 4: 24}
+
+print("Dictionary", d)
+
+for i in sorted(d.keys()):
+    print(i, end=" ")
+
+
+d={
+    1:"java",
+    5:"python",
+    3:"java script",
+    6:"node js",
+    8:"css"
+}
+for key , value in d.items():
+    if key ==3:
+        print(key, value)
+
+    # print(key, value)
